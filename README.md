@@ -1,4 +1,4 @@
-# CLI-ToDo
+# cli-todo
 
 A simple command-line todo list manager built with Python using [Typer](https://typer.tiangolo.com/) and [Rich](https://rich.readthedocs.io/).  
 
