@@ -17,7 +17,7 @@ def add(task: Annotated[str, typer.Argument(help="Task name (use \" \" for tasks
     """Add a new task"""
     
     if task == None:
-      print("You should insert a name after `add` command \nCheck `python3 main.py --help`")
+      print("You should insert a task name after `add` command")
       return
     tasks.append({"name": task, "is_done": False})
     print(f"[green]Task added[/green]: \n{task}")
@@ -39,7 +39,7 @@ def done(task_num: Annotated[int, typer.Argument(help="Task to complete (by numb
           print(f"[green]Task done \n[strike]{done_task['name']}[/strike][/green]")
         except IndexError:
           print("[red]Invalid task number[/red]")
-          print("Run `python3 main.py [b]list[/b]` to see each task with its number")
+          print("Run `python3 todo.py [b]list[/b]` to see each task with its number")
     else:
         print("No valid option")
     
@@ -59,7 +59,7 @@ def delete(task_num: Annotated[int, typer.Argument(help="Task to delete (by numb
             print(f"[red]Task deleted[/red] \n[strike]{deleted_task['name']}[/strike]")
         except IndexError:
             print("[red]Invalid task number[/red]")
-            print("Run `python3 main.py [b]list[/b]` to see each task with its number")
+            print("Run `python3 todp.py [b]list[/b]` to see each task with its number")
     else:
         print("No valid option")
     save()
