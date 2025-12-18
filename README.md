@@ -4,6 +4,8 @@ A simple command-line todo list manager built with Python using [Typer](https://
 
 › You can make, preview, complete, and delete tasks. All from your terminal.
 
+![usage example](usage-example.jpg)
+
 ---
 
 ## Installation
